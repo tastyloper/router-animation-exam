@@ -5,21 +5,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { AComponent } from './components/a.component';
-import { BComponent } from './components/b.component';
 import { ContainerComponent } from './components/container.component';
+
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AComponent,
-    BComponent,
     ContainerComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MainModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { fadeAnimation } from './fade.animation';
-import { routerTransition } from './transition-animation';
-import { routerfadeinout } from './fadeinout-animation';
+import { fadeAnimation } from './core/animation/fade.animation';
+import { routerTransition } from './core/animation/transition-animation';
+import { routerfadeinout } from './core/animation/fadeinout-animation';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,10 @@ import { routerfadeinout } from './fadeinout-animation';
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-            <a class="nav-link" routerLink="/a">A</a>
+            <a class="nav-link" routerLink="/main/a">APage</a>
           </li>
           <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-            <a class="nav-link" routerLink="/b">B</a>
+            <a class="nav-link" routerLink="/main/b">BPage</a>
           </li>
         </ul>
       </div>
