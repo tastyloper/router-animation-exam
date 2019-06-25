@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { fadeAnimation } from './fade.animation';
-import { routerTransition } from './transition-animation';
-import { routerfadeinout } from './fadeinout-animation';
+import { fadeAnimation } from './core/animation/fade.animation';
+import { routerTransition } from './core/animation/transition-animation';
+import { routerfadeinout } from './core/animation/fadeinout-animation';
 
 @Component({
   selector: 'app-root',

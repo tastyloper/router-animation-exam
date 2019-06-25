@@ -5,7 +5,7 @@
 }
 nav {
   position: absolute;
-  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 main {
@@ -14,8 +14,8 @@ main {
 }
 ::ng-deep router-outlet ~ * {
   position: absolute;
-  top: 56px;
-  width: 100%;
+  left: 85px;
+  width: calc(100% - 85px);
   height: 100%;
   overflow-y: scroll;
 }
